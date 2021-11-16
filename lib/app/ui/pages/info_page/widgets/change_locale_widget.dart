@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/data/services/app_setting_services/app_language_service.dart';
-import 'package:flutter_getx_hive_template/app/translation/languages_names.dart';
+import 'package:companion/app/data/services/app_setting_services/app_language_service.dart';
+import 'package:companion/app/translation/languages_names.dart';
 import 'package:get/get.dart';
 
 class ChangeLocaleWidget extends StatefulWidget {

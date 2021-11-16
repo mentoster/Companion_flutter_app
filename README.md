@@ -8,9 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/mentoster/flutter_getx_hive_template.svg)](https://github.com/mentoster/flutter_getx_hive_template/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/mentoster/flutter_getx_hive_template.svg)](https://github.com/mentoster/flutter_getx_hive_template/pulls)
-
+[![GitHub Issues](https://img.shields.io/github/issues/mentoster/companion.svg)](https://github.com/mentoster/companion/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/mentoster/companion.svg)](https://github.com/mentoster/companion/pulls)
 
 </div>
 
@@ -89,7 +88,7 @@ Add additional notes about how to deploy this on a live system.
 
 * [@mentoster](https://github.com/mentoster) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/mentoster/flutter_getx_hive_template/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/mentoster/companion/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 

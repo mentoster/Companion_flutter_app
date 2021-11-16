@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/data/services/app_setting_services/app_theme_service.dart';
+import 'package:companion/app/data/services/app_setting_services/app_theme_service.dart';
 
-import 'package:flutter_getx_hive_template/app/ui/theme/app_constants.dart';
+import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:get/get.dart';
 
 class ChangethemeWidget extends StatefulWidget {

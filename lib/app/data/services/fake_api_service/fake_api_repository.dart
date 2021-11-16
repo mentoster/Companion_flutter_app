@@ -1,4 +1,4 @@
-import 'package:flutter_getx_hive_template/app/data/services/fake_api_service/fake_api_mapper.dart';
+import 'package:companion/app/data/services/fake_api_service/fake_api_mapper.dart';
 
 import '../../models/models_generated/user_generated.dart';
 import '../../models/user_model.dart';

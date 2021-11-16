@@ -1,4 +1,4 @@
-import 'package:flutter_getx_hive_template/app/translation/languages_names.dart';
+import 'package:companion/app/translation/languages_names.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:logging/logging.dart';

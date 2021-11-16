@@ -1,4 +1,4 @@
-package com.example.flutter_getx_hive_template
+package com.example.companion
 
 import io.flutter.embedding.android.FlutterActivity
 

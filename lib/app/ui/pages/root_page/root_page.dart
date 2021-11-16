@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/ui/pages/bottomnavbar_page/bottomnavbar_page.dart';
-import 'package:flutter_getx_hive_template/app/ui/pages/login_page/login_page.dart';
+import 'package:companion/app/ui/pages/bottomnavbar_page/bottomnavbar_page.dart';
+import 'package:companion/app/ui/pages/login_page/login_page.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
 import '../../../controllers/root_controller.dart';

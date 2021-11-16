@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/ui/theme/app_constants.dart';
+import 'package:companion/app/ui/theme/app_constants.dart';
 
 class UserAvatarWidget extends StatelessWidget {
   const UserAvatarWidget({

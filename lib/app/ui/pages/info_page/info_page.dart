@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/ui/theme/app_constants.dart';
+import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:get/get.dart';
 
 import '../../../controllers/info_controller.dart';
@@ -53,7 +53,7 @@ class InfoPage extends GetView<InfoController> {
                       }
                     }),
                 ChangethemeWidget(),
-                 ChangeLocaleWidget(),
+                ChangeLocaleWidget(),
               ],
             ),
           ),

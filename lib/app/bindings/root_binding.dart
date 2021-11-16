@@ -1,7 +1,7 @@
-import 'package:flutter_getx_hive_template/app/controllers/bottomnavbar_controller.dart';
-import 'package:flutter_getx_hive_template/app/controllers/home_controller.dart';
-import 'package:flutter_getx_hive_template/app/controllers/info_controller.dart';
-import 'package:flutter_getx_hive_template/app/controllers/login_controller.dart';
+import 'package:companion/app/controllers/bottomnavbar_controller.dart';
+import 'package:companion/app/controllers/home_controller.dart';
+import 'package:companion/app/controllers/info_controller.dart';
+import 'package:companion/app/controllers/login_controller.dart';
 import 'package:get/get.dart';
 import '../controllers/root_controller.dart';
 

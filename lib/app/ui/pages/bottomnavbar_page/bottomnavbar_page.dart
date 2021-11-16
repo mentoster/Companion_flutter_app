@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/ui/pages/home_page/home_page.dart';
-import 'package:flutter_getx_hive_template/app/ui/pages/info_page/info_page.dart';
-import 'package:flutter_getx_hive_template/app/ui/pages/login_page/login_page.dart';
+import 'package:companion/app/ui/pages/home_page/home_page.dart';
+import 'package:companion/app/ui/pages/info_page/info_page.dart';
+import 'package:companion/app/ui/pages/login_page/login_page.dart';
 import 'package:get/get.dart';
 import '../../../controllers/bottomnavbar_controller.dart';
 

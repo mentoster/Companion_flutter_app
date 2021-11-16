@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_hive_template/app/controllers/login_controller.dart';
-import 'package:flutter_getx_hive_template/app/ui/theme/app_constants.dart';
+import 'package:companion/app/controllers/login_controller.dart';
+import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
 

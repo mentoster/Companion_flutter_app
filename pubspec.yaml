@@ -1,4 +1,4 @@
-name: flutter_getx_hive_template
+name: companion
 description: template
 
 publish_to: "none"
@@ -34,3 +34,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/genre/
+    - assets/logo/
+    #
+    - assets/images/dummy_images/avatars/
+    - assets/images/dummy_images/games/
+    - assets/images/dummy_images/news/

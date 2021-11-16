@@ -1,4 +1,4 @@
-import 'package:flutter_getx_hive_template/app/controllers/root_controller.dart';
+import 'package:companion/app/controllers/root_controller.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
