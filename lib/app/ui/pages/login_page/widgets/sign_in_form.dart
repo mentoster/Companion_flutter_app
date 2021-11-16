@@ -28,59 +28,81 @@ class _SignInFormState extends State<SignInForm> {
           _autoValidate ? AutovalidateMode.always : AutovalidateMode.disabled,
       child: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            const SizedBox(
-              height: defaultPadding,
-            ),
             Text(
               "Почта",
               style: textRegular14,
             ),
             TextFormField(
               decoration: InputDecoration(
-                labelText: 'Email address'.tr,
-                filled: true,
-                isDense: true,
-              ),
+                  labelText: 'email@email.ru',
+                  filled: true,
+                  isDense: true,
+                  fillColor: Theme.of(context).colorScheme.background),
               controller: widget._emailController,
               keyboardType: TextInputType.emailAddress,
               autocorrect: false,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Email is required.'.tr;
+                  return 'Email is required.';
                 }
                 if (!value.isEmail) {
-                  return 'Not email'.tr;
+                  return 'Not email';
                 }
                 return null;
               },
             ),
             const SizedBox(
-              height: 12,
+              height: defaultPadding,
+            ),
+            Text(
+              "Пароль",
+              style: textRegular14,
             ),
             TextFormField(
               decoration: InputDecoration(
-                labelText: 'Password'.tr,
-                filled: true,
-                isDense: true,
-              ),
+                  labelText: 'password',
+                  filled: true,
+                  isDense: true,
+                  fillColor: Theme.of(context).colorScheme.background),
               obscureText: true,
               controller: widget._passwordController,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Password is required.'.tr;
+                  return 'Password is required.';
                 }
                 return null;
               },
             ),
             const SizedBox(
-              height: 16,
+              height: defaultPadding,
+            ),
+            Center(
+              child: Text(
+                "Забыли пароль?",
+                style: textRegular14,
+              ),
+            ),
+            const SizedBox(
+              height: defaultPadding,
             ),
             ElevatedButton(
                 onPressed: _onLoginButtonPressed, child: Text('Войти')),
             const SizedBox(
-              height: 20,
+              height: defaultPadding,
+            ),
+            OutlinedButton(
+                onPressed: () => {}, child: Text('Войти через Steam')),
+            const SizedBox(
+              height: defaultPadding,
+            ),
+            Center(
+              child: Text(
+                "Еще не с нами? Зарегистрироваться",
+                style: textRegular14,
+              ),
             ),
           ],
         ),

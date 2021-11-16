@@ -19,7 +19,7 @@ class GetNewButtonWidget extends StatelessWidget {
             onPressed: () {
               controller.fetchApi();
             },
-            child: Text('Get new profile'.tr)),
+            child: Text('Get new profile')),
       ],
     );
   }

@@ -12,30 +12,36 @@ class LoginPage extends GetView<LoginController> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-        body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Image.asset(
-          "assets/logo/app_logo.png",
-          width: size.width / 2,
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
-          child: Text(
-            "Добро пожалоловать, Геймер!",
-            textAlign: TextAlign.center,
-            softWrap: true,
-            style: h3Regular,
+        body: Padding(
+      padding: const EdgeInsets.all(screenPadding),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/logo/app_logo.png",
+            width: size.width / 2,
           ),
-        ),
-        Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(24),
-              color: Theme.of(context).colorScheme.surface,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+            child: Text(
+              "Добро пожалоловать, Геймер!",
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: h3Regular,
             ),
-            child: SignInForm()),
-      ],
+          ),
+          Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(24),
+                color: Theme.of(context).colorScheme.surface,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(defaultPadding),
+                child: SignInForm(),
+              )),
+        ],
+      ),
     ));
   }
 }

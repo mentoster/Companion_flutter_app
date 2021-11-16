@@ -12,7 +12,7 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
         appBar: AppBar(
             title: Text(
-              "Counter page".tr,
+              "Counter page",
             ),
             automaticallyImplyLeading: false),
         body: SafeArea(

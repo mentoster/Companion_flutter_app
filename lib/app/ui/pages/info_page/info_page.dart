@@ -18,7 +18,7 @@ class InfoPage extends GetView<InfoController> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            "Information page".tr,
+            "Information page",
           ),
         ),
         body: SafeArea(
