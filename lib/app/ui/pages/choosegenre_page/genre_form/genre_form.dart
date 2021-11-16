@@ -1,10 +1,13 @@
+import 'package:companion/app/controllers/root_controller.dart';
+import 'package:companion/app/routes/app_pages.dart';
 import 'package:companion/app/ui/global_widgets.dart/primary_button.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
-import 'package:companion/app/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:material_tag_editor/tag_editor.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 
+import 'widgets/chip.dart';
 import 'widgets/genre_box.dart';
 
 class ChooseGenreForm extends StatefulWidget {
@@ -15,6 +18,8 @@ class ChooseGenreForm extends StatefulWidget {
 }
 
 class _ChooseGenreFormState extends State<ChooseGenreForm> {
+  List<String> _values = [];
+  final RootController _rootController = Get.find();
   final tagColor = const Color(0xff333333);
   final List<GenreBox> genreBoxes = [
     const GenreBox("Стратегия",
@@ -42,7 +47,7 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
           style: h4Medium,
         ),
         const SizedBox(
-          height: defaultPadding / 2,
+          height: defaultPadding,
         ),
         Text(
           "Впишите теги, которые вам подходят",
@@ -50,6 +55,42 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
         ),
         const SizedBox(
           height: 8,
+        ),
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: Theme.of(context).colorScheme.background,
+              width: 1,
+            ),
+            color: Theme.of(context).colorScheme.background,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+            child: TagEditor(
+              length: _values.length,
+              delimiters: [',', ' '],
+              hasAddButton: true,
+              inputDecoration: const InputDecoration(
+                border: InputBorder.none,
+              ),
+              onTagChanged: (newValue) {
+                setState(() {
+                  _values.add(newValue);
+                });
+              },
+              tagBuilder: (context, index) => ChipTag(
+                index: index,
+                label: _values[index],
+                onDeleted: (index) {
+                  print("deleted $index");
+                  setState(() {
+                    _values.removeAt(index);
+                  });
+                },
+              ),
+            ),
+          ),
         ),
         const SizedBox(
           height: 16,
@@ -82,7 +123,10 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
         const SizedBox(
           height: 16,
         ),
-        PrimaryButton("Продолжить", onPressed: () => {})
+        PrimaryButton("Продолжить", onPressed: () {
+          _rootController.registred.value = true;
+          Get.offNamed(Routes.INITIAL);
+        })
       ],
     );
   }

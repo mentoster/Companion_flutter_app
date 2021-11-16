@@ -14,7 +14,7 @@ class ChoosegenrePage extends GetView<ChoosegenreController> {
     return Scaffold(
         body: Padding(
       padding: const EdgeInsets.all(screenPadding),
-      child: Center(
+      child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,

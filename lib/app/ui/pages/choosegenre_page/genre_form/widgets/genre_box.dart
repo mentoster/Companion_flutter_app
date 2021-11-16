@@ -31,7 +31,7 @@ class _GenreBoxState extends State<GenreBox> {
           color: widget.boxColor,
           border: Border.all(
             color: selected ? const Color(0xff0d7fe9) : const Color(0x000d7fe9),
-            width: 5,
+            width: 4,
           ),
         ),
         child: Row(

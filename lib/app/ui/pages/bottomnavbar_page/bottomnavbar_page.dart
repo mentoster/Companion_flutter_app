@@ -35,11 +35,19 @@ class BottomnavbarPage extends StatelessWidget {
                 label: 'Home',
               ),
               _bottomNavigationBarItem(
+                icon: Icons.search,
+                label: 'Home',
+              ),
+              _bottomNavigationBarItem(
+                icon: Icons.messenger_outline,
+                label: 'Home',
+              ),
+              _bottomNavigationBarItem(
                 icon: Icons.login,
                 label: 'News',
               ),
               _bottomNavigationBarItem(
-                icon: Icons.info,
+                icon: Icons.account_circle_outlined,
                 label: 'Account',
               ),
             ],
