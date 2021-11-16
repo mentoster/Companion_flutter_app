@@ -4,7 +4,6 @@ import 'package:companion/app/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'package:companion/app/ui/theme/app_text_theme.dart';
-import 'package:textfield_tags/textfield_tags.dart';
 
 import 'widgets/genre_box.dart';
 
@@ -50,32 +49,8 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
           style: textRegular14,
         ),
         const SizedBox(
-          height: 4,
+          height: 8,
         ),
-        TextFieldTags(
-            tagsStyler: TagsStyler(
-                tagDecoration: BoxDecoration(
-                  color: tagColor,
-                  borderRadius: BorderRadius.circular(90),
-                ),
-                tagCancelIcon: Icon(Icons.cancel_outlined,
-                    size: 18.0,
-                    color: Theme.of(context).textTheme.bodyText1!.color),
-                tagPadding: const EdgeInsets.symmetric(
-                    vertical: defaultPadding / 3, horizontal: defaultPadding)),
-            textFieldStyler: TextFieldStyler(
-                textFieldFilled: true,
-                textFieldEnabledBorder: const OutlineInputBorder(
-                    borderSide: BorderSide(color: borderColor, width: 1.0)),
-                textFieldFilledColor: Theme.of(context).colorScheme.background),
-            onTag: (tag) {},
-            onDelete: (tag) {},
-            validator: (tag) {
-              if (tag.length > 15) {
-                return "Слишком большой тег";
-              }
-              return null;
-            }),
         const SizedBox(
           height: 16,
         ),

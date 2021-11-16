@@ -9,6 +9,11 @@ class SignWithSteamButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
+        style: ButtonStyle(
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ))),
         onPressed: () => {},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
