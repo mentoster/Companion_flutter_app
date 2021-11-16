@@ -4,7 +4,6 @@ import 'package:logging/logging.dart';
 
 class RootController extends GetxController {
   var registred = false.obs;
-  bool? nullRegistred;
   final appSettingsBox = GetStorage();
   final log = Logger('RootController');
   @override
@@ -15,9 +14,9 @@ class RootController extends GetxController {
 
   checkRegistry() async {
     bool? resultLogin = appSettingsBox.read("registered");
+    log.info(resultLogin);
     if (resultLogin == null) {
       registred.value = false;
-      nullRegistred = true;
       log.info('Not registered yet! Go to login page...');
     } else {
       registred.value = resultLogin;

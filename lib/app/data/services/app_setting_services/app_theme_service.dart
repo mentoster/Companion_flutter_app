@@ -20,38 +20,22 @@ class AppThemeService extends GetxService {
   }
 
   void setTheme(bool? isDarkTheme) {
-    if (isDarkTheme == null) {
-      var brightness = SchedulerBinding.instance!.window.platformBrightness;
-      bool isDarkMode = brightness == Brightness.dark;
-      isDarkMode ? Get.changeTheme(Themes.dark) : Get.changeTheme(Themes.light);
-      getBox.write(saveThemeCode, null);
-      changeStatusBarColor(isDarkMode);
-    } else if (isDarkTheme == true) {
-      Get.changeTheme(Themes.dark);
-      getBox.write(saveThemeCode, true);
-      changeStatusBarColor(true);
-    } else if (isDarkTheme == false) {
-      Get.changeTheme(Themes.light);
-      getBox.write(saveThemeCode, false);
-      changeStatusBarColor(false);
-    }
+    Get.changeTheme(Themes.dark);
+    getBox.write(saveThemeCode, true);
+    changeStatusBarColor();
   }
 
   static bool? getThemeNow() {
     return GetStorage().read(saveThemeCode);
   }
 
-  void changeStatusBarColor(bool toDark) {
+  void changeStatusBarColor() {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        statusBarColor: toDark
-            ? Themes.dark.appBarTheme.backgroundColor
-            : Themes.light.appBarTheme.backgroundColor,
-        statusBarIconBrightness: toDark ? Brightness.dark : Brightness.light,
-        systemNavigationBarColor: toDark
-            ? Themes.dark.bottomNavigationBarTheme.backgroundColor
-            : Themes.light.bottomNavigationBarTheme.backgroundColor,
+        statusBarColor: Themes.dark.appBarTheme.backgroundColor,
+        statusBarIconBrightness: Brightness.light,
+        systemNavigationBarColor:
+            Themes.dark.bottomNavigationBarTheme.backgroundColor,
         systemNavigationBarDividerColor: Colors.transparent,
-        systemNavigationBarIconBrightness:
-            toDark ? Brightness.light : Brightness.dark));
+        systemNavigationBarIconBrightness: Brightness.dark));
   }
 }

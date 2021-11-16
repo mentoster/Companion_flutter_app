@@ -1,3 +1,4 @@
+import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:companion/app/controllers/login_controller.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
@@ -31,6 +32,10 @@ class _SignInFormState extends State<SignInForm> {
           children: <Widget>[
             const SizedBox(
               height: defaultPadding,
+            ),
+            Text(
+              "Почта",
+              style: textRegular14,
             ),
             TextFormField(
               decoration: InputDecoration(
@@ -73,8 +78,7 @@ class _SignInFormState extends State<SignInForm> {
               height: 16,
             ),
             ElevatedButton(
-                onPressed: _onLoginButtonPressed,
-                child: Text('Registration'.tr)),
+                onPressed: _onLoginButtonPressed, child: Text('Войти')),
             const SizedBox(
               height: 20,
             ),

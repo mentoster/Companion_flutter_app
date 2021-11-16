@@ -11,8 +11,7 @@ class RootPage extends GetView<RootController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: Obx(() {
-      if (controller.registred.value == false &&
-          controller.nullRegistred != null) {
+      if (controller.registred.value == false) {
         return const LoginPage();
       } else if (controller.registred.value == true) {
         return const BottomnavbarPage();

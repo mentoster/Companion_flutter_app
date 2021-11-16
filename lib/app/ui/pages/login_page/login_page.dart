@@ -1,3 +1,5 @@
+import 'package:companion/app/ui/theme/app_constants.dart';
+import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/login_controller.dart';
@@ -8,32 +10,32 @@ class LoginPage extends GetView<LoginController> {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Login'.tr),
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Image.asset(
+          "assets/logo/app_logo.png",
+          width: size.width / 2,
         ),
-        body: SafeArea(
-          minimum: const EdgeInsets.all(16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Obx(() => controller.registered.value == true
-                  ? Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("You are already registered in the app!".tr),
-                        Text(
-                            "${"Email".tr}: ${controller.loginModel.value.email}"),
-                        Text(
-                            "${"Password".tr}: ${controller.loginModel.value.password}"),
-                      ],
-                    )
-                  : Container()),
-              SignInForm(),
-            ],
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+          child: Text(
+            "Добро пожалоловать, Геймер!",
+            textAlign: TextAlign.center,
+            softWrap: true,
+            style: h3Regular,
           ),
-        ));
+        ),
+        Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(24),
+              color: Theme.of(context).colorScheme.surface,
+            ),
+            child: SignInForm()),
+      ],
+    ));
   }
 }

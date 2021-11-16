@@ -2,29 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 abstract class Themes {
-  static final ThemeData light = ThemeData.light().copyWith(
-      primaryColor: Colors.blue,
-      appBarTheme: const AppBarTheme(backgroundColor: Colors.blue),
-      bottomNavigationBarTheme:
-          BottomNavigationBarThemeData(backgroundColor: Colors.grey[50]));
-
   static final ThemeData dark = ThemeData.dark().copyWith(
-      colorScheme: const ColorScheme(
-        primary: Color(0xffff9800),
-        primaryVariant: Color(0xff000000),
-        secondary: Color(0xff64ffda),
-        secondaryVariant: Color(0xff00bfa5),
-        surface: Color(0xff424242),
-        background: Color(0xff616161),
-        error: Color(0xffd32f2f),
-        onPrimary: Color(0xff000000),
-        onSecondary: Color(0xff000000),
-        onSurface: Color(0xffffffff),
-        onBackground: Color(0xff000000),
-        onError: Color(0xff000000),
+      colorScheme: ColorScheme(
+        primary: const Color(0xff0EE98D),
+        primaryVariant: const Color(0xff34D178),
+        secondary: const Color(0xff0EE98D),
+        secondaryVariant: const Color(0xff34D178),
+        surface: const Color(0xff2F3136),
+        background: const Color(0xff202225),
+        error: const Color(0xffd32f2f),
+        onPrimary: const Color(0xff2F3136),
+        onSecondary: const Color(0xffFFFFFF).withOpacity(0.87),
+        onSurface: const Color(0xffFFFFFF).withOpacity(0.87),
+        onBackground: const Color(0xffFFFFFF).withOpacity(0.87),
+        onError: const Color(0xffDE3B2D),
         brightness: Brightness.dark,
       ),
-      appBarTheme: AppBarTheme(backgroundColor: Colors.grey[800]),
-      bottomNavigationBarTheme:
-          const BottomNavigationBarThemeData(backgroundColor: Color(0xff2e2e2e)));
+      textTheme: TextTheme(
+          bodyText1:
+              TextStyle(color: const Color(0xffFFFFFF).withOpacity(0.87))),
+      appBarTheme: const AppBarTheme(backgroundColor: Color(0xff2F3136)),
+      scaffoldBackgroundColor: const Color(0xff202225),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Color(0xff202225)));
 }
