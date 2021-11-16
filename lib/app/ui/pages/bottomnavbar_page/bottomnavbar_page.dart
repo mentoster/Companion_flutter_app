@@ -1,3 +1,4 @@
+import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:companion/app/ui/pages/home_page/home_page.dart';
@@ -31,7 +32,7 @@ class BottomnavbarPage extends StatelessWidget {
             elevation: 0,
             items: [
               _bottomNavigationBarItem(
-                icon: Icons.home,
+                icon: CompanionIcons.news,
                 label: 'Home',
               ),
               _bottomNavigationBarItem(
@@ -43,11 +44,11 @@ class BottomnavbarPage extends StatelessWidget {
                 label: 'Home',
               ),
               _bottomNavigationBarItem(
-                icon: Icons.login,
+                icon: CompanionIcons.bookmarkbookmark,
                 label: 'News',
               ),
               _bottomNavigationBarItem(
-                icon: Icons.account_circle_outlined,
+                icon: CompanionIcons.icon_artworkprofile,
                 label: 'Account',
               ),
             ],
