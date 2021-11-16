@@ -1,3 +1,4 @@
+import 'package:companion/app/ui/global_widgets.dart/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
@@ -121,25 +122,5 @@ class _SignInFormState extends State<SignInForm> {
         _autoValidate = true;
       });
     }
-  }
-}
-
-class PrimaryButton extends StatelessWidget {
-  final Function() onPressed;
-  final String text;
-  const PrimaryButton(
-    this.text, {
-    Key? key,
-    required this.onPressed,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-        onPressed: onPressed,
-        child: Text(
-          text,
-          style: buttonText,
-        ));
   }
 }

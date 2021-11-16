@@ -12,7 +12,7 @@ class RootPage extends GetView<RootController> {
   Widget build(BuildContext context) {
     return Scaffold(body: Obx(() {
       if (controller.registred.value == false) {
-        return const LoginPage();
+        return  LoginPage();
       } else if (controller.registred.value == true) {
         return const BottomnavbarPage();
       } else {

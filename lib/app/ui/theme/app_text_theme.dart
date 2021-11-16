@@ -24,3 +24,8 @@ final TextStyle h3Regular = TextStyle(
     fontSize: 24,
     color: Themes.dark.colorScheme.primary,
     fontFamily: "Oxanium");
+
+final TextStyle h5Regular = TextStyle(
+    fontSize: 18,
+    color: Themes.dark.textTheme.bodyText1!.color,
+    fontFamily: "Oxanium");

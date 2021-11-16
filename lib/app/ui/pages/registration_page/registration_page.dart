@@ -1,12 +1,12 @@
+import 'package:companion/app/ui/pages/login_page/widgets/sign_in_form/sign_in_form.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../controllers/login_controller.dart';
-import 'widgets/sign_in_form/sign_in_form.dart';
+import '../../../controllers/registration_controller.dart';
 
-class LoginPage extends GetView<LoginController> {
-  const LoginPage({Key? key}) : super(key: key);
+class RegistrationPage extends GetView<RegistrationController> {
+  const RegistrationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,19 +25,10 @@ class LoginPage extends GetView<LoginController> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: Text(
-              "Мы рады новым бойцам в наших рядах!",
+              "Добро пожалоловать, Геймер!",
               textAlign: TextAlign.center,
               softWrap: true,
               style: h3Regular,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: defaultPadding),
-            child: Text(
-              "Шаг 1 из 2",
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: h5Regular,
             ),
           ),
           Container(
