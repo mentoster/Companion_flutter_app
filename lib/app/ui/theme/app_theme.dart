@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+const borderColor = Color(0xff525252);
+
 abstract class Themes {
   static final ThemeData dark = ThemeData.dark().copyWith(
       colorScheme: ColorScheme(

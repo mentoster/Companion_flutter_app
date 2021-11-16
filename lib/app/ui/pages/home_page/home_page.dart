@@ -20,7 +20,8 @@ class HomePage extends GetView<HomeController> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Obx(() => Text("${controller.count.value}", style: headline1)),
+                Obx(() =>
+                    Text("${controller.count.value}", style: textRegular14)),
               ],
             ),
           ),

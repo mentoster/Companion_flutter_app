@@ -3,7 +3,7 @@ import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/login_controller.dart';
-import 'widgets/sign_in_form.dart';
+import 'widgets/sign_in_form/sign_in_form.dart';
 
 class LoginPage extends GetView<LoginController> {
   const LoginPage({Key? key}) : super(key: key);

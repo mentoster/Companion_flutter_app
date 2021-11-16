@@ -6,7 +6,6 @@ import 'app/ui/theme/app_theme.dart';
 
 void main() async {
   await initServices();
-
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     darkTheme: Themes.dark,

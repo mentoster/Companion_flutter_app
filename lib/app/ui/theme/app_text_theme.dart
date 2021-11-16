@@ -2,8 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'app_theme.dart';
 
-const TextStyle headline1 =
-    TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold);
+final TextStyle buttonText = TextStyle(
+    fontSize: 16,
+    color: Themes.dark.colorScheme.surface,
+    fontWeight: FontWeight.w500);
+
+final TextStyle outlinedButtonText = TextStyle(
+  fontSize: 16,
+  color: Themes.dark.textTheme.bodyText1!.color,
+);
+
+final TextStyle textButtonText = TextStyle(
+  fontSize: 14,
+  color: Themes.dark.colorScheme.primary,
+);
 
 final TextStyle textRegular14 =
     TextStyle(fontSize: 14, color: Themes.dark.textTheme.bodyText1!.color);
