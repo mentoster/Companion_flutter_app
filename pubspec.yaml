@@ -17,6 +17,8 @@ dependencies:
   logging: ^1.0.2
   hive: ^2.0.4
   hive_flutter: ^1.1.0
+  textfield_tags: ^1.4.2
+  flutter_svg: ^0.23.0+1
 
 dev_dependencies:
   hive_generator:
@@ -37,6 +39,7 @@ flutter:
     - assets/images/genre/
     - assets/logo/
     - assets/splash_creen/Logo.png
+    - assets/icons/
     #
     - assets/images/dummy_images/avatars/
     - assets/images/dummy_images/games/

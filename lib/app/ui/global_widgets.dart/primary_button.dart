@@ -13,6 +13,11 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+        style: ButtonStyle(
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ))),
         onPressed: onPressed,
         child: Text(
           text,

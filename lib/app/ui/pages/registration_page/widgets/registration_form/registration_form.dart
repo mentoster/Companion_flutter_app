@@ -1,5 +1,7 @@
 import 'package:companion/app/routes/app_pages.dart';
 import 'package:companion/app/ui/global_widgets.dart/primary_button.dart';
+import 'package:companion/app/ui/pages/login_page/widgets/sign_in_form/widgets/forget_password_button.dart';
+import 'package:companion/app/ui/pages/login_page/widgets/sign_with_steam_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
@@ -9,24 +11,22 @@ import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:companion/app/ui/theme/app_theme.dart';
 
-import '../sign_with_steam_button.dart';
-import 'widgets/forget_password_button.dart';
 import '../../../../global_widgets.dart/text_with_link.dart';
 
-class SignInForm extends StatefulWidget {
+class RegistrationForm extends StatefulWidget {
   final log = Logger('SignInForm');
   final LoginController _controller = Get.find();
   final GlobalKey<FormState> _key = GlobalKey<FormState>();
   final _passwordController = TextEditingController();
   final _emailController = TextEditingController();
 
-  SignInForm({Key? key}) : super(key: key);
+  RegistrationForm({Key? key}) : super(key: key);
 
   @override
-  _SignInFormState createState() => _SignInFormState();
+  _RegistrationFormState createState() => _RegistrationFormState();
 }
 
-class _SignInFormState extends State<SignInForm> {
+class _RegistrationFormState extends State<RegistrationForm> {
   bool _autoValidate = false;
 
   @override
@@ -54,6 +54,34 @@ class _SignInFormState extends State<SignInForm> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Text(
+              "Ваш ник",
+              style: textRegular14,
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            SizedBox(
+              height: 36,
+              child: TextFormField(
+                keyboardType: TextInputType.name,
+                decoration: inputDecoration,
+                controller: widget._emailController,
+                autocorrect: false,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Email is required.';
+                  }
+                  if (!value.isEmail) {
+                    return 'Not email';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            const SizedBox(
+              height: defaultPadding,
+            ),
             Text(
               "Почта",
               style: textRegular14,
@@ -103,14 +131,41 @@ class _SignInFormState extends State<SignInForm> {
                 },
               ),
             ),
-            const ForgetPasswordButton(),
-            PrimaryButton('Войти', onPressed: _onLoginButtonPressed),
+            const SizedBox(
+              height: defaultPadding,
+            ),
+            Text(
+              "Повторите Пароль",
+              style: textRegular14,
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            SizedBox(
+              height: 36,
+              child: TextFormField(
+                decoration: inputDecoration,
+                obscureText: true,
+                controller: widget._passwordController,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Password is required.';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            const SizedBox(
+              height: defaultPadding,
+            ),
+            PrimaryButton('Зарегистрироваться',
+                onPressed: () => Get.toNamed(Routes.GENRE)),
             const SizedBox(height: defaultPadding / 2),
             const SignWithSteamButton(),
             TextWithLinkButton(
-              "Еще не с нами?",
-              link: "Зарегистрироваться",
-              onPressed: () => Get.toNamed(Routes.REGISTRATION),
+              "Есть профиль?",
+              link: "Назад",
+              onPressed: () => Get.back(),
             ),
           ],
         ),

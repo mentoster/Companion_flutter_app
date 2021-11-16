@@ -25,19 +25,10 @@ class LoginPage extends GetView<LoginController> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: Text(
-              "Мы рады новым бойцам в наших рядах!",
+              "Добро пожалоловать, Геймер!",
               textAlign: TextAlign.center,
               softWrap: true,
               style: h3Regular,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: defaultPadding),
-            child: Text(
-              "Шаг 1 из 2",
-              textAlign: TextAlign.center,
-              softWrap: true,
-              style: h5Regular,
             ),
           ),
           Container(
@@ -46,8 +37,10 @@ class LoginPage extends GetView<LoginController> {
                 color: Theme.of(context).colorScheme.surface,
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: defaultPadding, horizontal: defaultPadding * 2),
+                padding: const EdgeInsets.only(
+                    top: defaultPadding,
+                    left: defaultPadding * 2,
+                    right: defaultPadding * 2),
                 child: SignInForm(),
               )),
         ],
