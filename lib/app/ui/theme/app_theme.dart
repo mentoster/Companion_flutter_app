@@ -26,5 +26,5 @@ abstract class Themes {
       appBarTheme: const AppBarTheme(backgroundColor: Color(0xff2F3136)),
       scaffoldBackgroundColor: const Color(0xff202225),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          backgroundColor: Color(0xff202225)));
+          backgroundColor: Color(0xff2F3136)));
 }
