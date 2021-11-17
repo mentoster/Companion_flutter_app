@@ -3,7 +3,7 @@ import '../data/services/fake_api_service/fake_api_repository.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
 
-class InfoController extends GetxController {
+class ProfileController extends GetxController {
   final log = Logger('InfoController');
   final FakeUserRepository _fakeUserRepository = FakeUserRepository();
 

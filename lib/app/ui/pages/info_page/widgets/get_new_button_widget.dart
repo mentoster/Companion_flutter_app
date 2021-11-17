@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:companion/app/controllers/info_controller.dart';
+import 'package:companion/app/controllers/profile_controller.dart';
 import 'package:get/get.dart';
 
 class GetNewButtonWidget extends StatelessWidget {
@@ -8,7 +8,7 @@ class GetNewButtonWidget extends StatelessWidget {
     required this.controller,
   }) : super(key: key);
 
-  final InfoController controller;
+  final ProfileController controller;
 
   @override
   Widget build(BuildContext context) {

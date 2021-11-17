@@ -20,7 +20,9 @@ class BottomnavbarPage extends StatelessWidget {
             children: [
               HomePage(),
               LoginPage(),
-              InfoPage(),
+              ProfilePage(),
+              ProfilePage(),
+              ProfilePage(),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
@@ -44,7 +46,7 @@ class BottomnavbarPage extends StatelessWidget {
                 label: 'Home',
               ),
               _bottomNavigationBarItem(
-                icon: CompanionIcons.bookmarkbookmark,
+                icon: Icons.bookmark,
                 label: 'News',
               ),
               _bottomNavigationBarItem(
