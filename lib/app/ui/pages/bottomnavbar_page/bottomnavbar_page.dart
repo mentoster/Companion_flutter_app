@@ -2,6 +2,7 @@ import 'package:companion/app/ui/pages/avengers_page/avengers_page.dart';
 import 'package:companion/app/ui/pages/community_page/community_page.dart';
 import 'package:companion/app/ui/pages/favorite_page/favorite_page.dart';
 import 'package:companion/app/ui/pages/news_page/news_page.dart';
+import 'package:companion/app/ui/pages/story_page/story_page.dart';
 import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,8 @@ class BottomnavbarPage extends StatelessWidget {
               showUnselectedLabels: false,
               type: BottomNavigationBarType.fixed,
               backgroundColor: Theme.of(context).colorScheme.surface,
+              unselectedItemColor:
+                  Theme.of(context).iconTheme.color!.withOpacity(0.34),
               elevation: 0,
               items: [
                 _bottomNavigationBarItem(

@@ -159,7 +159,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
               height: defaultPadding,
             ),
             PrimaryButton('Зарегистрироваться',
-                onPressed: () => Get.toNamed(Routes.GENRE)),
+                onPressed: () => Get.offAllNamed(Routes.GENRE)),
             const SizedBox(height: defaultPadding / 2),
             const SignWithSteamButton(),
             TextWithLinkButton(

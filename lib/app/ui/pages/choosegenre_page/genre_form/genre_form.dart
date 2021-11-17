@@ -125,7 +125,7 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
         ),
         PrimaryButton("Продолжить", onPressed: () {
           _rootController.registred.value = true;
-          Get.offNamed(Routes.INITIAL);
+          Get.offAllNamed(Routes.INITIAL);
         })
       ],
     );

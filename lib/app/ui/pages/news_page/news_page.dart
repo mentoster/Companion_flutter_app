@@ -1,10 +1,14 @@
 import 'dart:ui';
 
+import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/news_controller.dart';
 import 'widgets/blur_widget.dart';
+import 'widgets/news_title_widget.dart';
+import 'widgets/stories_feed_widget.dart';
+import 'widgets/story_widget.dart';
 
 class NewsPage extends GetView<NewsController> {
   const NewsPage({Key? key}) : super(key: key);
@@ -30,51 +34,25 @@ class NewsPage extends GetView<NewsController> {
               sigmaY: 8.0,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                NewsTitle(),
-                Container(
-                  width: double.infinity,
-                  child: Text("Story"),
-                ),
-                Divider()
-              ],
-            ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                child: NewsTitleWidget(),
+              ),
+              StoriesFeedWidget(
+                controller: controller,
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: screenPadding, vertical: defaultPadding),
+                child: Divider(),
+              )
+            ],
           ),
         ]),
-      ),
-    );
-  }
-}
-
-class NewsTitle extends StatelessWidget {
-  const NewsTitle({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      child: RichText(
-        text: TextSpan(
-          text: "Ваша ",
-          style: pageTitle,
-          children: <TextSpan>[
-            TextSpan(
-                text: 'лента',
-                style: TextStyle(
-                  fontSize: 40,
-                  fontFamily: "Oxanium",
-                  fontWeight: FontWeight.w700,
-                  color: Theme.of(context).textTheme.bodyText1!.color,
-                )),
-          ],
-        ),
       ),
     );
   }

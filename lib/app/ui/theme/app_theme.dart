@@ -25,6 +25,8 @@ abstract class Themes {
               TextStyle(color: const Color(0xffFFFFFF).withOpacity(0.87))),
       appBarTheme: const AppBarTheme(backgroundColor: Color(0xff2F3136)),
       scaffoldBackgroundColor: const Color(0xff202225),
+      dividerColor: const Color(0xffC4C4C4),
+      iconTheme: const IconThemeData(color: Color(0xff686B6F)),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Color(0xff2F3136)));
 }
