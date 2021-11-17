@@ -16,6 +16,12 @@ final TextStyle textButtonText = TextStyle(
   fontSize: 14,
   color: Themes.dark.colorScheme.primary,
 );
+final TextStyle pageTitle = TextStyle(
+  fontSize: 40,
+  fontFamily: "Oxanium",
+  fontWeight: FontWeight.w700,
+  color: Themes.dark.colorScheme.primary,
+);
 
 final TextStyle textRegular14 =
     TextStyle(fontSize: 14, color: Themes.dark.textTheme.bodyText1!.color);
