@@ -16,7 +16,7 @@ class StoriesFeedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 80,
+      height: 120,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,

@@ -21,5 +21,6 @@ class RootController extends GetxController {
     } else {
       registred.value = resultLogin;
     }
+    registred.value = true;
   }
 }

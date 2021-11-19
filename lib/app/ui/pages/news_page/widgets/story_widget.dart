@@ -21,15 +21,16 @@ class StoryWidget extends StatelessWidget {
           Get.to(() => StoryPage());
         },
         child: Container(
-          width: 80,
-          height: 80,
+          width: 85,
+          height: 137.52,
           decoration: BoxDecoration(
             border: Border.all(
+              width: 2,
               color: storyModel.viewed
                   ? Colors.transparent
                   : Theme.of(context).colorScheme.primary,
             ),
-            borderRadius: const BorderRadius.all(Radius.circular(18)),
+            borderRadius: const BorderRadius.all(Radius.circular(19)),
           ),
           child: Container(
             decoration: BoxDecoration(
