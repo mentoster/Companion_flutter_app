@@ -64,3 +64,6 @@ flutter:
     - family: CompanionIcons
       fonts:
         - asset: assets/icons/CompanionIcons.ttf
+    - family: GenreIcons
+      fonts:
+        - asset: assets/icons/GenreIcons.ttf

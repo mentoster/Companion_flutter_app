@@ -28,3 +28,23 @@ class CompanionIcons {
   static const IconData bookmarkbookmark =
       IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
+
+class MyFlutterApp {
+  MyFlutterApp._();
+
+  static const _kFontFam = 'GenreIcons';
+  static const String? _kFontPkg = null;
+
+  static const IconData roleplay =
+      IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData adventure =
+      IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData simulator =
+      IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData puzzle =
+      IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData strategy =
+      IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData action =
+      IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+}
