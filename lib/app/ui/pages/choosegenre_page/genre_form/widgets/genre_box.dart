@@ -1,15 +1,10 @@
+import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/material.dart';
 
 class GenreBox extends StatefulWidget {
-  final Color boxColor;
   final String name;
-  final String path;
-  const GenreBox(
-    this.name, {
-    Key? key,
-    required this.boxColor,
-    required this.path,
-  }) : super(key: key);
+  final IconData icon;
+  const GenreBox(this.name, {Key? key, required this.icon}) : super(key: key);
 
   @override
   State<GenreBox> createState() => _GenreBoxState();
@@ -28,9 +23,11 @@ class _GenreBoxState extends State<GenreBox> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: widget.boxColor,
+          color: Theme.of(context).colorScheme.surface,
           border: Border.all(
-            color: selected ? const Color(0xff0d7fe9) : const Color(0x000d7fe9),
+            color: selected
+                ? Theme.of(context).colorScheme.primary
+                : Theme.of(context).colorScheme.surface,
             width: 4,
           ),
         ),
@@ -46,7 +43,12 @@ class _GenreBoxState extends State<GenreBox> {
               children: [
                 SizedBox(
                   width: 80,
-                  child: Image.asset(widget.path),
+                  child: FittedBox(
+                    child: Icon(
+                      widget.icon,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Column(
@@ -59,8 +61,8 @@ class _GenreBoxState extends State<GenreBox> {
                       child: Text(
                         widget.name,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: Color(0xaa000000),
+                        style: TextStyle(
+                          color: Theme.of(context).textTheme.bodyText1!.color,
                           // fontSize: 18,
                         ),
                       ),

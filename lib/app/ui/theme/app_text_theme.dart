@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
 final TextStyle buttonText = TextStyle(
-    fontSize: 16,
+    fontSize: 18,
     color: Themes.dark.colorScheme.surface,
-    fontWeight: FontWeight.w500);
+    fontWeight: FontWeight.w700);
 
 final TextStyle outlinedButtonText = TextStyle(
-  fontSize: 16,
+  fontSize: 18,
   color: Themes.dark.textTheme.bodyText1!.color,
 );
 
@@ -22,9 +22,16 @@ final TextStyle pageTitle = TextStyle(
   fontWeight: FontWeight.w700,
   color: Themes.dark.colorScheme.primary,
 );
+final TextStyle textRegular18 = TextStyle(
+  fontSize: 18,
+  color: Themes.dark.textTheme.bodyText1!.color,
+  fontWeight: FontWeight.w500,
+);
 
-final TextStyle textRegular14 =
-    TextStyle(fontSize: 14, color: Themes.dark.textTheme.bodyText1!.color);
+final TextStyle textRegular14 = TextStyle(
+  fontSize: 14,
+  color: Themes.dark.textTheme.bodyText1!.color,
+);
 
 final TextStyle h3Regular = TextStyle(
     fontSize: 24,

@@ -25,7 +25,7 @@ class LoginPage extends GetView<LoginController> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: Text(
-              "Добро пожалоловать, Геймер!",
+              "Companion",
               textAlign: TextAlign.center,
               softWrap: true,
               style: h3Regular,

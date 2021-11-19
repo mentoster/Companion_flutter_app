@@ -56,7 +56,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
           children: <Widget>[
             Text(
               "Ваш ник",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,
@@ -84,7 +84,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             ),
             Text(
               "Почта",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,
@@ -112,7 +112,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             ),
             Text(
               "Пароль",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,
@@ -136,7 +136,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
             ),
             Text(
               "Повторите Пароль",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,

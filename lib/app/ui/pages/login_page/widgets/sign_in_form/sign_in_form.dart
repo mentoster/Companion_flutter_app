@@ -56,7 +56,7 @@ class _SignInFormState extends State<SignInForm> {
           children: <Widget>[
             Text(
               "Почта",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,
@@ -84,7 +84,7 @@ class _SignInFormState extends State<SignInForm> {
             ),
             Text(
               "Пароль",
-              style: textRegular14,
+              style: textRegular18,
             ),
             const SizedBox(
               height: 6,

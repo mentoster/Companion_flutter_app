@@ -29,8 +29,8 @@ class CompanionIcons {
       IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
 
-class MyFlutterApp {
-  MyFlutterApp._();
+class GenreIcons {
+  GenreIcons._();
 
   static const _kFontFam = 'GenreIcons';
   static const String? _kFontPkg = null;

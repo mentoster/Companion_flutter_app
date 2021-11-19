@@ -2,6 +2,7 @@ import 'package:companion/app/controllers/root_controller.dart';
 import 'package:companion/app/routes/app_pages.dart';
 import 'package:companion/app/ui/global_widgets.dart/primary_button.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
+import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_tag_editor/tag_editor.dart';
@@ -22,19 +23,30 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
   final RootController _rootController = Get.find();
   final tagColor = const Color(0xff333333);
   final List<GenreBox> genreBoxes = [
-    const GenreBox("Стратегия",
-        boxColor: Color(0xffb2e9aa), path: "assets/images/genre/strategy.png"),
-    const GenreBox("Ролевая",
-        boxColor: Color(0xffE9D4AA),
-        path: "assets/images/genre/role-playing.png"),
-    const GenreBox("Головоломка",
-        boxColor: Color(0xffAFAAE9), path: "assets/images/genre/puzzle.png"),
-    const GenreBox("Экшн",
-        boxColor: Color(0xffAADAE9), path: "assets/images/genre/action.png"),
-    const GenreBox("Приключение",
-        boxColor: Color(0xffE9AAAA), path: "assets/images/genre/adventure.png"),
-    const GenreBox("Симулятор",
-        boxColor: Color(0xffAAE9E1), path: "assets/images/genre/simulator.png"),
+    const GenreBox(
+      "Стратегия",
+      icon: GenreIcons.strategy,
+    ),
+    const GenreBox(
+      "Ролевая",
+      icon: GenreIcons.roleplay,
+    ),
+    const GenreBox(
+      "Головоломка",
+      icon: GenreIcons.puzzle,
+    ),
+    const GenreBox(
+      "Экшн",
+      icon: GenreIcons.action,
+    ),
+    const GenreBox(
+      "Приключение",
+      icon: GenreIcons.adventure,
+    ),
+    const GenreBox(
+      "Симулятор",
+      icon: GenreIcons.simulator,
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -110,14 +122,17 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(16),
-            child: GridView.count(
-                padding: const EdgeInsets.all(0),
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
-                crossAxisCount: 2,
-                children: List.generate(genreBoxes.length, (i) {
-                  return genreBoxes[i];
-                })),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GridView.count(
+                  padding: const EdgeInsets.all(0),
+                  crossAxisSpacing: 8,
+                  mainAxisSpacing: 8,
+                  crossAxisCount: 2,
+                  children: List.generate(genreBoxes.length, (i) {
+                    return genreBoxes[i];
+                  })),
+            ),
           ),
         ),
         const SizedBox(
