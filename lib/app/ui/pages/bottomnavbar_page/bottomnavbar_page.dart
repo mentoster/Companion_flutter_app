@@ -28,43 +28,57 @@ class BottomnavbarPage extends StatelessWidget {
               const ProfilePage(),
             ],
           ),
-          bottomNavigationBar: ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(24),
-              topLeft: Radius.circular(24),
-            ),
-            child: BottomNavigationBar(
-              onTap: controller.changeTabIndex,
-              currentIndex: controller.tabIndex,
-              showSelectedLabels: false,
-              showUnselectedLabels: false,
-              type: BottomNavigationBarType.fixed,
-              backgroundColor: Theme.of(context).colorScheme.surface,
-              unselectedItemColor:
-                  Theme.of(context).iconTheme.color!.withOpacity(0.34),
-              elevation: 0,
-              items: [
-                _bottomNavigationBarItem(
-                  icon: CompanionIcons.news,
-                  label: 'Home',
-                ),
-                _bottomNavigationBarItem(
-                  icon: Icons.search,
-                  label: 'Home',
-                ),
-                _bottomNavigationBarItem(
-                  icon: Icons.messenger_outline,
-                  label: 'Home',
-                ),
-                _bottomNavigationBarItem(
-                  icon: Icons.bookmark,
-                  label: 'News',
-                ),
-                _bottomNavigationBarItem(
-                  icon: CompanionIcons.icon_artworkprofile,
-                  label: 'Account',
-                ),
+          bottomNavigationBar: Container(
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.only(
+                topRight: Radius.circular(24),
+                topLeft: Radius.circular(24),
+              ),
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                    color: Theme.of(context).iconTheme.color!.withOpacity(1),
+                    blurRadius: 1,
+                    offset: const Offset(0.0, 0))
               ],
+            ),
+            child: ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topRight: Radius.circular(24),
+                topLeft: Radius.circular(24),
+              ),
+              child: BottomNavigationBar(
+                onTap: controller.changeTabIndex,
+                currentIndex: controller.tabIndex,
+                showSelectedLabels: false,
+                showUnselectedLabels: false,
+                type: BottomNavigationBarType.fixed,
+                backgroundColor: Theme.of(context).colorScheme.surface,
+                unselectedItemColor:
+                    Theme.of(context).iconTheme.color!.withOpacity(1),
+                elevation: 0,
+                items: [
+                  _bottomNavigationBarItem(
+                    icon: CompanionIcons.news,
+                    label: 'Home',
+                  ),
+                  _bottomNavigationBarItem(
+                    icon: Icons.search,
+                    label: 'Home',
+                  ),
+                  _bottomNavigationBarItem(
+                    icon: Icons.messenger_outline,
+                    label: 'Home',
+                  ),
+                  _bottomNavigationBarItem(
+                    icon: Icons.bookmark,
+                    label: 'News',
+                  ),
+                  _bottomNavigationBarItem(
+                    icon: CompanionIcons.icon_artworkprofile,
+                    label: 'Account',
+                  ),
+                ],
+              ),
             ),
           ),
         );
