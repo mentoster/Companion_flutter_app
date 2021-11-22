@@ -2,8 +2,8 @@ import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
-class PortWidget extends StatelessWidget {
-  const PortWidget({
+class PostWidget extends StatelessWidget {
+  const PostWidget({
     Key? key,
   }) : super(key: key);
 
