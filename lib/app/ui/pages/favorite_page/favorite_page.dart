@@ -12,9 +12,9 @@ class FavoritePage extends GetView<FavoriteController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-            child: SingleChildScrollView(
-      child: Stack(children: [
+        body: SingleChildScrollView(
+      child: SafeArea(
+          child: Stack(children: [
         Padding(
           padding: const EdgeInsets.only(left: 6, top: 13),
           child: BlurFilter(
@@ -49,7 +49,7 @@ class FavoritePage extends GetView<FavoriteController> {
               const PostWidget(),
               const PostWidget(),
             ]),
-      ]),
-    )));
+      ])),
+    ));
   }
 }

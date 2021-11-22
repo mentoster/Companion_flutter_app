@@ -20,12 +20,12 @@ class BottomnavbarPage extends StatelessWidget {
         return Scaffold(
           body: IndexedStack(
             index: controller.tabIndex,
-            children: [
-              const NewsPage(),
+            children: const [
+              NewsPage(),
               AvengersPage(),
-              const CommunityPage(),
+              CommunityPage(),
               FavoritePage(),
-              const ProfilePage(),
+              ProfilePage(),
             ],
           ),
           extendBody: true,

@@ -16,9 +16,9 @@ class ProfilePage extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-            child: SingleChildScrollView(
-      child: Column(
+        body: SingleChildScrollView(
+      child: SafeArea(
+          child: Column(
         children: [
           const MainInfoWidget(),
           const SizedBox(
@@ -125,8 +125,8 @@ class ProfilePage extends GetView<ProfileController> {
             ),
           )
         ],
-      ),
-    )));
+      )),
+    ));
   }
 }
 
