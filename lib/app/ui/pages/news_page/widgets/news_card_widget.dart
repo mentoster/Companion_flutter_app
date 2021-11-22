@@ -49,7 +49,7 @@ class NewsCard extends StatelessWidget {
                     Text(
                       date,
                       style: TextStyle(
-                        color: Color(0x99ffffff),
+                        color: Theme.of(context).textTheme.bodyText1!.color,
                         fontSize: 12,
                       ),
                     ),
@@ -71,7 +71,7 @@ class NewsCard extends StatelessWidget {
                     Text(
                       prewiewText,
                       style: TextStyle(
-                        color: Color(0x99ffffff),
+                        color: Theme.of(context).textTheme.bodyText1!.color,
                         fontSize: 14,
                       ),
                     ),

@@ -50,10 +50,38 @@ class AvengersPage extends GetView<AvengersController> {
               const SizedBox(
                 height: defaultPadding,
               ),
-              const Center(
+              Container(
+                height: 36,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      color: const Color(0xff525252),
+                      width: 1.0,
+                    ),
+                    borderRadius: const BorderRadius.all(Radius.circular(8))),
+                padding: const EdgeInsets.only(left: defaultPadding),
+                child: Row(
+                  children: const [
+                    Icon(Icons.search),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Text(
+                      "Найти игру...",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 14, color: Color(0xff525252)),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: defaultPadding,
+              ),
+              Center(
                 child: Text(
                   "Кто-то вас буллит  в игре?\nМстистели исправят эту ситуацию!",
                   textAlign: TextAlign.center,
+                  style: h4Medium,
                 ),
               ),
               const SizedBox(

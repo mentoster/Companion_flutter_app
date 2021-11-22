@@ -32,6 +32,11 @@ final TextStyle textRegular14 = TextStyle(
   fontSize: 14,
   color: Themes.dark.textTheme.bodyText1!.color,
 );
+final TextStyle textMedium14 = TextStyle(
+  fontSize: 14,
+  color: Themes.dark.textTheme.bodyText1!.color,
+  fontWeight: FontWeight.w500,
+);
 final TextStyle textRegular16 = TextStyle(
   fontSize: 16,
   color: Themes.dark.textTheme.bodyText1!.color,
@@ -55,11 +60,14 @@ final TextStyle h5RegularPrimaryColor = TextStyle(
     color: Themes.dark.colorScheme.primary,
     fontFamily: "Oxanium");
 
-final TextStyle h4Medium = TextStyle(
+final TextStyle h4MediumPrimaryColor = TextStyle(
     fontSize: 20,
     color: Themes.dark.colorScheme.primary,
     fontWeight: FontWeight.w500);
-
+final TextStyle h4Medium = TextStyle(
+    fontSize: 20,
+    color: Themes.dark.textTheme.bodyText1!.color,
+    fontWeight: FontWeight.w500);
 final TextStyle h5Regular = TextStyle(
     fontSize: 18,
     color: Themes.dark.textTheme.bodyText1!.color,

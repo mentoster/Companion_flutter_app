@@ -56,7 +56,7 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
       children: <Widget>[
         Text(
           "Как бы вы себя описали?",
-          style: h4Medium,
+          style: h4MediumPrimaryColor,
         ),
         const SizedBox(
           height: defaultPadding,
@@ -108,7 +108,7 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
         ),
         Text(
           "Какие жанры игр вам нравятся?",
-          style: h4Medium,
+          style: h4MediumPrimaryColor,
         ),
         const SizedBox(
           height: 16,
