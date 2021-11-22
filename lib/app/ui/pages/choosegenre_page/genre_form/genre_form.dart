@@ -95,7 +95,6 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
                 index: index,
                 label: _values[index],
                 onDeleted: (index) {
-                  print("deleted $index");
                   setState(() {
                     _values.removeAt(index);
                   });

@@ -40,6 +40,10 @@ final TextStyle textRegular14Post = TextStyle(
   fontSize: 14,
   color: Themes.dark.iconTheme.color!,
 );
+final TextStyle textMedium16pxPrimaryColor = TextStyle(
+  fontSize: 16,
+  color: Themes.dark.colorScheme.primary,
+);
 
 final TextStyle h3Regular = TextStyle(
     fontSize: 24,

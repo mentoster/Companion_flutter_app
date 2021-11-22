@@ -8,6 +8,8 @@ import 'widgets/big_game_card_widget.dart';
 import 'widgets/game_card_widget.dart';
 
 class AvengersPage extends GetView<AvengersController> {
+  const AvengersPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
