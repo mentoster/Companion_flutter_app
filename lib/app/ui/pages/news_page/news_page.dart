@@ -6,19 +6,16 @@ import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/news_controller.dart';
-import 'widgets/blur_widget.dart';
+import '../../global_widgets.dart/blur_widget.dart';
 import 'widgets/news_card_widget.dart';
-import 'widgets/news_gradient_widget.dart';
 import 'widgets/news_title_widget.dart';
 import 'widgets/stories_feed_widget.dart';
-import 'widgets/story_widget.dart';
 
 class NewsPage extends GetView<NewsController> {
   const NewsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(

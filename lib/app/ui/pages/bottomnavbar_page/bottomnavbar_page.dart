@@ -21,13 +21,15 @@ class BottomnavbarPage extends StatelessWidget {
           body: IndexedStack(
             index: controller.tabIndex,
             children: [
-              NewsPage(),
+              const NewsPage(),
               AvengersPage(),
-              CommunityPage(),
+              const CommunityPage(),
               FavoritePage(),
               const ProfilePage(),
             ],
           ),
+          extendBody: true,
+          backgroundColor: Colors.transparent,
           bottomNavigationBar: Container(
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(
@@ -59,23 +61,23 @@ class BottomnavbarPage extends StatelessWidget {
                 items: [
                   _bottomNavigationBarItem(
                     icon: CompanionIcons.news,
-                    label: 'Home',
+                    label: 'Новоси',
                   ),
                   _bottomNavigationBarItem(
                     icon: Icons.search,
-                    label: 'Home',
+                    label: 'Мстители',
                   ),
                   _bottomNavigationBarItem(
                     icon: Icons.messenger_outline,
-                    label: 'Home',
+                    label: 'Gameunity',
                   ),
                   _bottomNavigationBarItem(
-                    icon: Icons.bookmark,
-                    label: 'News',
+                    icon: Icons.bookmark_outline,
+                    label: 'Избранное',
                   ),
                   _bottomNavigationBarItem(
                     icon: CompanionIcons.icon_artworkprofile,
-                    label: 'Account',
+                    label: 'Профиль',
                   ),
                 ],
               ),

@@ -32,6 +32,14 @@ final TextStyle textRegular14 = TextStyle(
   fontSize: 14,
   color: Themes.dark.textTheme.bodyText1!.color,
 );
+final TextStyle textRegular16 = TextStyle(
+  fontSize: 16,
+  color: Themes.dark.textTheme.bodyText1!.color,
+);
+final TextStyle textRegular14Post = TextStyle(
+  fontSize: 14,
+  color: Themes.dark.iconTheme.color!,
+);
 
 final TextStyle h3Regular = TextStyle(
     fontSize: 24,
