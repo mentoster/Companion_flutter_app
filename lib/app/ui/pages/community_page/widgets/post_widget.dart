@@ -55,7 +55,7 @@ class PortWidget extends StatelessWidget {
                   const SizedBox(
                     height: defaultPadding,
                   ),
-                  Text("Секреты и фишки DotA 2",
+                  const Text("Секреты и фишки DotA 2",
                       style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,
