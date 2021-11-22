@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:companion/app/ui/global_widgets.dart/blur_widget.dart';
-import 'package:companion/app/ui/pages/choosegenre_page/genre_form/widgets/chip.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 
