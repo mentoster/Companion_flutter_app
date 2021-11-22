@@ -1,6 +1,8 @@
+import 'package:companion/app/ui/pages/postmoreinfo_page/postmoreinfo_page.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({
@@ -92,9 +94,16 @@ class PostWidget extends StatelessWidget {
                       const SizedBox(
                         width: defaultPadding / 2,
                       ),
-                      const Icon(Icons.comment_outlined),
-                      const SizedBox(width: defaultPadding / 3),
-                      Text("3 комментария", style: textRegular14Post),
+                      InkWell(
+                        onTap: () => Get.to(PostmoreinfoPage()),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.comment_outlined),
+                            const SizedBox(width: defaultPadding / 3),
+                            Text("3 комментария", style: textRegular14Post),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   Row(
