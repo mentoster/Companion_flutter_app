@@ -1,5 +1,5 @@
 import 'package:companion/app/ui/global_widgets.dart/blur_widget.dart';
-import 'package:companion/app/ui/pages/news_page/widgets/news_title_widget.dart';
+import 'package:companion/app/ui/pages/newpost_page/newpost_page.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
@@ -52,17 +52,20 @@ class CommunityPage extends GetView<CommunityController> {
                 const SizedBox(height: defaultPadding),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    CommunityCardButton(
+                  children: [
+                    const CommunityCardButton(
                       title: "Мой профиль",
                       icon: CompanionIcons.icon_artworkprofile,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: defaultPadding,
                     ),
-                    CommunityCardButton(
-                      title: "Новый пост",
-                      icon: CompanionIcons.pencil_plus,
+                    InkWell(
+                      onTap: () => Get.to(NewpostPage()),
+                      child: const CommunityCardButton(
+                        title: "Новый пост",
+                        icon: CompanionIcons.pencil_plus,
+                      ),
                     ),
                   ],
                 ),

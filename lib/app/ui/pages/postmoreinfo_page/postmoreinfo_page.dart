@@ -1,3 +1,4 @@
+import 'package:companion/app/ui/global_widgets.dart/back_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
@@ -18,10 +19,7 @@ class PostmoreinfoPage extends GetView<PostmoreinfoController> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.chevron_left),
-          onPressed: () => Get.back(),
-        ),
+        leading: const BackButtonWidget(),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

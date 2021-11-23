@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/newsmoreinfopage_controller.dart';
-import 'widgets/back_button_widget.dart';
+import '../../global_widgets.dart/back_button_widget.dart';
 import 'widgets/back_image_widget.dart';
 import 'widgets/news_more_info_gradient_widget.dart';
 import 'widgets/post_more_info_widget.dart';
