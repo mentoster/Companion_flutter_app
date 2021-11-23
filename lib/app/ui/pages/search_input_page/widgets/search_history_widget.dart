@@ -5,11 +5,9 @@ class SearchHistoryWidget extends StatelessWidget {
   const SearchHistoryWidget({
     Key? key,
     required this.searchResult,
-    required this.theme,
   }) : super(key: key);
 
   final String searchResult;
-  final ThemeData theme;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +23,8 @@ class SearchHistoryWidget extends StatelessWidget {
             ),
             Text(
               searchResult,
-              style: TextStyle(color: theme.textTheme.bodyText1!.color),
+              style: TextStyle(
+                  color: Theme.of(context).textTheme.bodyText1!.color),
             )
           ],
         ),

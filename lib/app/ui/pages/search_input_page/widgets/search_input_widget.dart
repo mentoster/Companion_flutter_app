@@ -1,3 +1,4 @@
+import 'package:companion/app/ui/pages/search_result_page/search_result_page.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,13 +21,18 @@ class SearchInputWidget extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: defaultPadding),
-          child: GestureDetector(
+          child: InkWell(
               onTap: () => Get.back(), child: const Icon(Icons.chevron_left)),
         ),
         SizedBox(
           width: constraints.maxWidth - defaultPadding * 5,
           child: TextField(
+            textInputAction: TextInputAction.search,
             autofocus: true,
+            onSubmitted: (value) {
+              Get.to(() => SearchResultPage(),
+                  transition: Transition.noTransition);
+            },
             controller: searchController,
             cursorColor: Theme.of(context).textTheme.bodyText1!.color,
             style: TextStyle(

@@ -22,6 +22,13 @@ final TextStyle pageTitle = TextStyle(
   fontWeight: FontWeight.w700,
   color: Themes.dark.colorScheme.primary,
 );
+final TextStyle nickNameSearchResult = TextStyle(
+  fontSize: 18,
+  fontFamily: "Oxanium",
+  fontWeight: FontWeight.w700,
+  color: Themes.dark.textTheme.bodyText1!.color,
+);
+
 final TextStyle textRegular18 = TextStyle(
   fontSize: 18,
   color: Themes.dark.textTheme.bodyText1!.color,
