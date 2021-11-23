@@ -1,4 +1,3 @@
-import 'package:companion/app/ui/pages/registration_page/widgets/registration_form/registration_form.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';

@@ -3,7 +3,6 @@ import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../search_input_page.dart';
 
 class SearchInputWidget extends StatelessWidget {
   const SearchInputWidget({
@@ -30,7 +29,7 @@ class SearchInputWidget extends StatelessWidget {
             textInputAction: TextInputAction.search,
             autofocus: true,
             onSubmitted: (value) {
-              Get.to(() => SearchResultPage(),
+              Get.to(() => const SearchResultPage(),
                   transition: Transition.noTransition);
             },
             controller: searchController,

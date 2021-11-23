@@ -21,11 +21,11 @@ class CompanionIcons {
   static const _kFontFam = 'CompanionIcons';
   static const String? _kFontPkg = null;
 
-  static const IconData pencil_plus =
+  static const IconData pencilPlus =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData news =
       IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData icon_artworkprofile =
+  static const IconData iconArtworkprofile =
       IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
 

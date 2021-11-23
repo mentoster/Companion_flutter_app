@@ -1,7 +1,6 @@
 import 'package:companion/app/ui/global_widgets.dart/back_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hive/hive.dart';
 
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_icons.dart';
@@ -85,7 +84,7 @@ class PostmoreinfoPage extends GetView<PostmoreinfoController> {
                   height: defaultPadding,
                 ),
                 const Text(
-                    """ Что бы получить максимум эффективности от лечения здоровья\маны, нужно перед лечением выложить предметы которые увеличивают здоровье\ману. Или же переключить характеристику Power Treads на ловкость. Главное делать это под вышкой или в укромном месте, и желательно делать это быстро.
+                    """ Что бы получить максимум эффективности от лечения здоровья\\маны, нужно перед лечением выложить предметы которые увеличивают здоровье\\ману. Или же переключить характеристику Power Treads на ловкость. Главное делать это под вышкой или в укромном месте, и желательно делать это быстро.
 
 
       Довольно легко можно избежать смерти от ульты Зевса или Снайпера если вы уже отступаете и имеете при себе Smoke of Deceit, прожмите их если увидете что в вас целится снайпер или если вы переживаете что зевс может вас убить ультой. "Важно: быть на расстоянии 1100 точек и дальше от вышек и героев, что бы было понятнее, это чуть меньше расстояния полностью прокаченного хука пуджа." Хоть Smoke of Deceit и являются инвизом, но вся фишка в том что этот инвиз подобен ульте сларка. И не раскрывается True Sight от способностей героев или аурой фонтана.
@@ -141,18 +140,19 @@ class PostmoreinfoPage extends GetView<PostmoreinfoController> {
         child: Row(
           children: [
             const BottomSendIconWidget(
-              icon: CompanionIcons.icon_artworkprofile,
+              icon: CompanionIcons.iconArtworkprofile,
             ),
             Container(
                 width: size.width - 188,
-                padding: EdgeInsets.only(left: 12, right: defaultPadding / 2),
+                padding:
+                    const EdgeInsets.only(left: 12, right: defaultPadding / 2),
                 child: Container(
                     height: 40,
                     decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.surface,
                         borderRadius:
                             const BorderRadius.all(Radius.circular(8))),
-                    padding: EdgeInsets.symmetric(horizontal: defaultPadding),
+                    padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
                     child: Align(
                         alignment: Alignment.centerLeft,
                         child: Text(

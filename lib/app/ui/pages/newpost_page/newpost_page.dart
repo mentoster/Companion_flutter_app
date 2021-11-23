@@ -4,7 +4,6 @@ import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:companion/app/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import '../../../controllers/newpost_controller.dart';
 
 class NewpostPage extends StatefulWidget {
   NewpostPage({Key? key}) : super(key: key);

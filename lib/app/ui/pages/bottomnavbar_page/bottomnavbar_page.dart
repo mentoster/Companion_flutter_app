@@ -3,7 +3,6 @@ import 'package:companion/app/ui/pages/community_page/community_page.dart';
 import 'package:companion/app/ui/pages/favorite_page/favorite_page.dart';
 import 'package:companion/app/ui/pages/news_page/news_page.dart';
 import 'package:companion/app/ui/pages/profile_page/profile_page.dart';
-import 'package:companion/app/ui/pages/story_page/story_page.dart';
 import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +75,7 @@ class BottomnavbarPage extends StatelessWidget {
                     label: 'Избранное',
                   ),
                   _bottomNavigationBarItem(
-                    icon: CompanionIcons.icon_artworkprofile,
+                    icon: CompanionIcons.iconArtworkprofile,
                     label: 'Профиль',
                   ),
                 ],

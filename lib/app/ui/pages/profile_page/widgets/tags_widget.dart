@@ -2,7 +2,6 @@ import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
-import '../profile_page.dart';
 import 'chip_tag_widget.dart';
 
 class TagsWidget extends StatelessWidget {

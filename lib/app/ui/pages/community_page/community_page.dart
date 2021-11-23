@@ -55,7 +55,7 @@ class CommunityPage extends GetView<CommunityController> {
                   children: [
                     const CommunityCardButton(
                       title: "Мой профиль",
-                      icon: CompanionIcons.icon_artworkprofile,
+                      icon: CompanionIcons.iconArtworkprofile,
                     ),
                     const SizedBox(
                       width: defaultPadding,
@@ -64,7 +64,7 @@ class CommunityPage extends GetView<CommunityController> {
                       onTap: () => Get.to(NewpostPage()),
                       child: const CommunityCardButton(
                         title: "Новый пост",
-                        icon: CompanionIcons.pencil_plus,
+                        icon: CompanionIcons.pencilPlus,
                       ),
                     ),
                   ],

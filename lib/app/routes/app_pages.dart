@@ -18,7 +18,7 @@ abstract class AppPages {
         binding: RegistrationBinding()),
     GetPage(
         name: Routes.GENRE,
-        page: () => ChoosegenrePage(),
+        page: () => const ChoosegenrePage(),
         binding: ChoosegenreBinding()),
   ];
 }

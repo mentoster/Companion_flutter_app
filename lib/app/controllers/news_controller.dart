@@ -3,5 +3,5 @@ import 'package:companion/app/data/models/story_model.dart';
 import 'package:get/get.dart';
 
 class NewsController extends GetxController {
-  List<StoryModel> dummyStories = DummyDatacLass.Stories;
+  List<StoryModel> dummyStories = DummyDatacLass.stories;
 }

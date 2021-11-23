@@ -1,7 +1,6 @@
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:flutter/material.dart';
 
-import '../profile_page.dart';
 import 'nickname_widget.dart';
 
 class MainInfoWidget extends StatelessWidget {
@@ -24,15 +23,15 @@ class MainInfoWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
-        children: [
-          const Center(
+        children: const [
+           Center(
             child: CircleAvatar(
               maxRadius: 90,
               backgroundImage:
                   AssetImage("assets/images/dummy_images/avatars/ava8.png"),
             ),
           ),
-          const SizedBox(
+           SizedBox(
             height: defaultPadding,
           ),
           NickNameWidget(),

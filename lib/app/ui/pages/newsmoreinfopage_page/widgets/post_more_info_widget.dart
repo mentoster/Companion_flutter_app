@@ -37,21 +37,21 @@ class PostMoreInfoWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: defaultPadding,
                 ),
-                Text("Пон.,17 октября • 15 мин."),
-                SizedBox(
+                const Text("Пон.,17 октября • 15 мин."),
+                const SizedBox(
                   height: defaultPadding,
                 ),
-                Text(
+                const Text(
                     "Российская команда Team Spirit выиграла чемпионат мира по Dota 2"),
-                SizedBox(
+                const SizedBox(
                   height: defaultPadding,
                 ),
-                Text(
+                const Text(
                     "Россияне из Team Spirit стали чемпионами The International 2021 по Dota 2. Заключительный матч с китайцами из PSG.LGD закончился со счётом 3:2. Это третий финал TI в истории, который завершился с таким счётом.В групповой стадии у Team Spirit возникли проблемы. Состав проиграл два первых матча и оказался на последнем месте турнирной таблицы, однако смог победить в нескольких играх подряд и выйти в верхнюю сетку плей-офф. Итоговая статистика групповой стадии: 5 побед и 3 поражения."),
-                SizedBox(
+                const SizedBox(
                   height: defaultPadding,
                 ),
                 ClipRRect(
@@ -59,10 +59,10 @@ class PostMoreInfoWidget extends StatelessWidget {
                   child:
                       Image.asset("assets/images/dummy_images/news/spirit.png"),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: defaultPadding,
                 ),
-                Text(
+                const Text(
                     "В плей-офф Team Spirit проиграла первый же матч с Invictus Gaming со счётом 1:2 и упала в нижнюю сетку. После этого началось победоносное шествие россиян. Они выбили из турнира Fnatic (2:0), двукратных чемпионов мира OG (2:0), соотечественников из Virtus.pro (2:1), отомстили IG (2:0) и расправились с Team Secret (2:1).Team Spirit заработала \$ 18,2 млн призовых, что сделало её участников самыми богатыми игроками в Dota 2 в СНГ. На втором месте расположилась PSG.LGD с \$ 5,2 млн призовых, а на третьем — Team Secret c \$ 3,6 млн."),
               ],
             ),

@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:companion/app/controllers/news_controller.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
@@ -9,7 +8,7 @@ import 'package:story/story_page_view/story_page_view.dart';
 import 'widgets/gradient_widget.dart';
 
 class StoryPage extends StatefulWidget {
-  StoryPage({Key? key}) : super(key: key);
+  const StoryPage({Key? key}) : super(key: key);
 
   @override
   _StoryPageState createState() => _StoryPageState();

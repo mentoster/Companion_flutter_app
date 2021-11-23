@@ -1,7 +1,7 @@
 import 'package:companion/app/data/models/story_model.dart';
 
 class DummyDatacLass {
-  static final List<StoryModel> Stories = [
+  static final List<StoryModel> stories = [
     StoryModel(
         title: "Witcher",
         imagesUrl: ["assets/images/dummy_images/games/witcher_history2.jpeg"],

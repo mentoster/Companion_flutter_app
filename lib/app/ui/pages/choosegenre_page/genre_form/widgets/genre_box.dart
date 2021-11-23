@@ -1,4 +1,3 @@
-import 'package:companion/app/ui/theme/app_icons.dart';
 import 'package:flutter/material.dart';
 
 class GenreBox extends StatefulWidget {

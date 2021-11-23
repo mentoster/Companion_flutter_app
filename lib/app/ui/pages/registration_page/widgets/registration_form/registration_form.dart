@@ -1,12 +1,10 @@
 import 'package:companion/app/routes/app_pages.dart';
 import 'package:companion/app/ui/global_widgets.dart/primary_button.dart';
-import 'package:companion/app/ui/pages/login_page/widgets/sign_in_form/widgets/forget_password_button.dart';
 import 'package:companion/app/ui/pages/login_page/widgets/sign_with_steam_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
 
-import 'package:companion/app/controllers/login_controller.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:companion/app/ui/theme/app_theme.dart';
@@ -15,7 +13,6 @@ import '../../../../global_widgets.dart/text_with_link.dart';
 
 class RegistrationForm extends StatefulWidget {
   final log = Logger('SignInForm');
-  final LoginController _controller = Get.find();
   final GlobalKey<FormState> _key = GlobalKey<FormState>();
   final _passwordController = TextEditingController();
   final _emailController = TextEditingController();
@@ -27,7 +24,7 @@ class RegistrationForm extends StatefulWidget {
 }
 
 class _RegistrationFormState extends State<RegistrationForm> {
-  bool _autoValidate = false;
+  final bool _autoValidate = false;
 
   @override
   Widget build(BuildContext context) {
@@ -171,16 +168,5 @@ class _RegistrationFormState extends State<RegistrationForm> {
         ),
       ),
     );
-  }
-
-  _onLoginButtonPressed() {
-    if (widget._key.currentState!.validate()) {
-      widget._controller.saveLogin(
-          widget._emailController.text, widget._passwordController.text);
-    } else {
-      setState(() {
-        _autoValidate = true;
-      });
-    }
   }
 }

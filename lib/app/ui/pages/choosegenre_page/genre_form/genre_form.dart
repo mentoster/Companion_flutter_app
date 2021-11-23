@@ -19,6 +19,7 @@ class ChooseGenreForm extends StatefulWidget {
 }
 
 class _ChooseGenreFormState extends State<ChooseGenreForm> {
+  // ignore: prefer_final_fields
   List<String> _values = [];
   final RootController _rootController = Get.find();
   final tagColor = const Color(0xff333333);
@@ -81,7 +82,7 @@ class _ChooseGenreFormState extends State<ChooseGenreForm> {
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
             child: TagEditor(
               length: _values.length,
-              delimiters: [',', ' '],
+              delimiters: const [',', ' '],
               hasAddButton: true,
               inputDecoration: const InputDecoration(
                 border: InputBorder.none,
