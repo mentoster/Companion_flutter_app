@@ -18,7 +18,7 @@ class StoryWidget extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(18),
         onTap: () {
-          Get.to(() => StoryPage());
+          Get.to(() => StoryPage(), transition: Transition.zoom);
         },
         child: Container(
           width: 85,

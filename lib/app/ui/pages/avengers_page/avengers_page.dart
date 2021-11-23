@@ -1,4 +1,5 @@
 import 'package:companion/app/ui/global_widgets.dart/blur_widget.dart';
+import 'package:companion/app/ui/pages/search_input_page/search_input_page.dart';
 import 'package:companion/app/ui/theme/app_constants.dart';
 import 'package:companion/app/ui/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
@@ -50,28 +51,33 @@ class AvengersPage extends GetView<AvengersController> {
               const SizedBox(
                 height: defaultPadding,
               ),
-              Container(
-                height: 36,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: const Color(0xff525252),
-                      width: 1.0,
-                    ),
-                    borderRadius: const BorderRadius.all(Radius.circular(8))),
-                padding: const EdgeInsets.only(left: defaultPadding),
-                child: Row(
-                  children: const [
-                    Icon(Icons.search),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    Text(
-                      "Найти игру...",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 14, color: Color(0xff525252)),
-                    ),
-                  ],
+              InkWell(
+                onTap: () => Get.to(() =>  SearchInputPage(),
+                    transition: Transition.noTransition),
+                child: Container(
+                  height: 36,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        color: const Color(0xff525252),
+                        width: 1.0,
+                      ),
+                      borderRadius: const BorderRadius.all(Radius.circular(8))),
+                  padding: const EdgeInsets.only(left: defaultPadding),
+                  child: Row(
+                    children: const [
+                      Icon(Icons.search),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        "Найти игру...",
+                        textAlign: TextAlign.center,
+                        style:
+                            TextStyle(fontSize: 14, color: Color(0xff525252)),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(
