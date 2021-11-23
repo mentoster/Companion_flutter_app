@@ -48,7 +48,7 @@ class _NewpostPageState extends State<NewpostPage> {
                 'Заголовок',
                 style: textRegular18,
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               TextFormField(
@@ -62,11 +62,11 @@ class _NewpostPageState extends State<NewpostPage> {
                   return null;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               Text('Содержимое', style: textRegular18),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               TextFormField(
@@ -76,7 +76,7 @@ class _NewpostPageState extends State<NewpostPage> {
                 keyboardType: TextInputType.multiline,
                 maxLines: null,
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               Container(
@@ -95,7 +95,7 @@ class _NewpostPageState extends State<NewpostPage> {
                       Icon(Icons.format_clear),
                     ]),
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               Container(
@@ -103,9 +103,9 @@ class _NewpostPageState extends State<NewpostPage> {
                     color: Theme.of(context).colorScheme.surface,
                     borderRadius: const BorderRadius.all(Radius.circular(8))),
                 padding: const EdgeInsets.all(8.0),
-                child: Icon(Icons.image_outlined),
+                child: const Icon(Icons.image_outlined),
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding,
               ),
               PrimaryButton("Опубликовать", onPressed: () => {}),
